@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white : hsla(0, 0%, 100%, 0.75); /*(paragraphs) */
+    --Very-light-gray : hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+    --Dark-cyan: hsl(184, 100%, 22%);
+
+}
+
+main {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-gray);
+}
+
+.container {
+    height: 31.25rem;
+    width: 57.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: var(--Transparent-white);
+}
+
+.col {
+    padding: 3rem;
+    position: relative;
+}
+
+.col > h2 {
+    color: var(--Very-light-gray);
+    font-family: "Big Shoulders Display";
+    font-size: 2.5rem;
+    margin: 1.6875rem 0px;
+}
+
+.col > p {
+    max-width: 195px;
+    font-family:  "Lexend Deca";
+    font-size: .875rem;
+    line-height: 1.8;
+}
+
+.container > :nth-child(1) {
+    background-color: var(--Bright-orange);
+    border-radius: .75rem 0px 0px .75rem;
+}
+
+.container > :nth-child(2) {
+    background-color: var(--Dark-cyan);
+}
+
+.container > :nth-child(3) {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px .75rem .75rem 0px;
+}
+
+button {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    display: block;
+    position: absolute;
+    bottom: 3rem;
+    border: solid .1563rem var(--Very-light-gray);
+    background-color: var(--Very-light-gray);
+    padding: .875rem 2rem;
+    border-radius: 1.5rem;
+}
+
+
+.container > :nth-child(1) button {
+    color: var(--Bright-orange);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.container > :nth-child(2) button {
+    color: var(--Dark-cyan);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.container > :nth-child(3) button {
+    color: var(--Very-dark-cyan);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    color: var(--Very-light-gray) !important;
+    background-color: transparent;
+}
+
+
+.attribution {
+    font-family: "Lexend Deca";
+    color: var(--Very-dark-cyan);
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.attribution>a {
+    text-decoration: none;
+    color: var(--Bright-orange);
+}
