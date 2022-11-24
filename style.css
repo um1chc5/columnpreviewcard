@@ -67,16 +67,22 @@ main {
 
 button {
     font-family: "Lexend Deca";
+    font-size: 16px;
     font-weight: 400;
     display: block;
     position: absolute;
     bottom: 3rem;
     border: solid .1563rem var(--Very-light-gray);
     background-color: var(--Very-light-gray);
-    padding: .875rem 2rem;
+    padding: .75rem 1.75rem;
     border-radius: 1.5rem;
 }
 
+button:hover {
+    color: var(--Very-light-gray) !important;
+    background-color: transparent;
+    transition: 0.35s ease-in-out;
+}
 
 .container > :nth-child(1) button {
     color: var(--Bright-orange);
@@ -96,10 +102,6 @@ button {
     letter-spacing: 0.5px;
 }
 
-button:hover {
-    color: var(--Very-light-gray) !important;
-    background-color: transparent;
-}
 
 
 .attribution {
